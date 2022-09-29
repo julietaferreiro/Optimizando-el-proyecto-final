@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estacionamiento</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="funciones.js"></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div>
+        <input type="text" id="name" placeholder="Propietario del vehículo" autocomplete="off"><!--INPUT DONDE VOY A INGRESAR EL NOMBRE DEL PROPIETARIO DEL VEHICULO-->
+        <input type="text" id="licence" placeholder="Patente del vehículo" autocomplete="off"><!--INPUT DONDE VOY A INGRESAR LA PATENTE DEL VEHICULO-->
+        <button id="send" class="success">Registrar</button><!--BOTON PARA REGISTRAR UN VEHICULO AL ESTACIONAMIENTO-->
+    </div>
+    <table><!--TABLA LA CUAL VAMOS A COMPLETAR DINAMICAMENTE-->
+        <thead>
+            <tr><!--ENCABEZADOS DE LA TABLA-->
+                <th>Vehículo</th>
+                <th>Patente</th>
+                <th>Entrada</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="garage"></tbody><!--CUERPO DE LA TABLA, ES LO QUE VAMOS A COMPLETAR-->
+    </table>
+</body>
+</html>
